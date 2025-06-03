@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Notificaciones App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar todas las notificaciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/notifications",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8082",
+          "path": ["notifications"]
+        }
+      }
+    },
+    {
+      "name": "Listar notificaciones pendientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/notifications/pending",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8082",
+          "path": ["notifications", "pending"]
+        }
+      }
+    }
+  ]
+}
