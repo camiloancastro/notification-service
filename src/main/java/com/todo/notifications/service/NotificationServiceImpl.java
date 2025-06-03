@@ -31,6 +31,7 @@ public class NotificationServiceImpl implements INotificationService{
     return repository.findAll().stream()
         .map(n -> new NotificationPOJO(
             n.getId(),
+            n.getTaskId(),
             n.getMessage(),
             n.getDate(),
             n.isCompleted()))
@@ -42,6 +43,7 @@ public class NotificationServiceImpl implements INotificationService{
     return repository.findByCompletedFalse().stream()
         .map(n -> new NotificationPOJO(
             n.getId(),
+            n.getTaskId(),
             n.getMessage(),
             n.getDate(),
             n.isCompleted()))
